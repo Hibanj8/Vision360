@@ -1,14 +1,15 @@
-"use client"
 import { useEffect, useState } from "react";
-import { FaMoon } from "react-icons/fa";
-import { BsSunFill } from "react-icons/bs";
 
 const ThemeToggle = () => {
     const [darkMode, setDarkMode] = useState(true);
 
     useEffect(() => {
         const theme = localStorage.getItem("theme");
-        if (theme === "dark") setDarkMode(true);
+        if (theme === "dark") {
+            setDarkMode(true);
+        } else {
+            setDarkMode(false);
+        }
     }, []);
 
     useEffect(() => {
@@ -21,14 +22,18 @@ const ThemeToggle = () => {
         }
     }, [darkMode]);
 
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
     return (
-        <>
-            <div className='relative w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-500 cursor-pointer rounded-full p-1' onClick={() => setDarkMode(!darkMode)}>
-                <FaMoon className='text-white' size={18} />
-                <div className='absolute bg-white dark:bg-gray-800 w-6 h-6 rounded-full shadow-md transform transition-transform duration-500' style={darkMode ? { left: "2px" } : { right: "2px" }}></div>
-            </div>
-            <BsSunFill className='ml-auto text-yellow-400' size={18} />
-        </>
+        <div className="toggle-container" onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>
+            {darkMode ? (
+                <img src="/mode/sun.png" alt="Sun Icon" className="w-7 h-7"/>
+            ) : (
+                <img src="/mode/moon.png" alt="Moon Icon" className="w-7 h-7"/>
+            )}
+        </div>
     );
 };
 

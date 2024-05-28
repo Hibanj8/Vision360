@@ -18,10 +18,10 @@ const Portfolio = () => {
                 <span className="uppercase text-purple-900 mb-2 block text-lg font-semibold">
                   Our Portfolio
                 </span>
-                <h2 className="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
+                <h2 className="text-white dark:text-black mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
                   Our Recent Projects
                 </h2>
-                <p className="text-body-color text-base text-black">
+                <p className="text-body-color text-white dark:text-black">
                   There are many variations of passages of Lorem Ipsum available
                   but the majority have suffered alteration in some form.
                 </p>
@@ -162,14 +162,14 @@ const PortfolioCard = ({
           <div className="overflow-hidden rounded-xl">
             <img src={ImageHref} alt="portfolio" className="w-full" />
           </div>
-          <div className="relative z-10 mx-7 -mt-20 rounded-2xl bg-black/60 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-            <span className="text-white mb-2 block text-sm font-medium">
+          <div className="relative z-10 mx-7 -mt-20 rounded-2xl bg-white/80 dark:bg-black/60 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
+            <span className="text-black dark:text-white mb-2 block text-sm font-medium">
               {category}
             </span>
-            <h3 className="text-white mb-5 text-xl font-bold">{title}</h3>
+            <h3 className=" text-black dark:text-white mb-5 text-xl font-bold">{title}</h3>
             <a
               href={buttonHref}
-              className="text-body-color text-black hover:border-primary hover:bg-primary inline-block border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium  hover:text-white relative nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-2xl hover:scale-105 hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
+              className="text-body-color hover:border-primary hover:bg-primary inline-block border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium text-white dark:text-black hover:text-black hover:dark:text-white relative nded-full overflow-hidden bg-black/60 dark:bg-white rounded-full transition-all duration-400 ease-in-out shadow-2xl hover:scale-105 hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
             >
               {button}
             </a>

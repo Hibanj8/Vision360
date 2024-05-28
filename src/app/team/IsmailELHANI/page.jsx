@@ -52,7 +52,7 @@ function ismail() {
                         </button>
 
                         <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
-                            <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
+                            <div className="w-full bg-white/80 dark:bg-black/60 h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
                                 <span className="w-42 h-42 inline-block"><a href="mailto:ismailelhani2017@gmail.com">
                                     <img src="/photo-profile/ismail's profile.png" alt="hiba's profile" className='rounded-full' /></a>
                                 </span>
@@ -64,7 +64,7 @@ function ismail() {
 
             <div className="w-full md:w-2/3 md:order-1">
                 <div className="flex flex-col m-4 md:ml-8 md:mt-8 items-start justify-center min-h-screen">
-                    <div className="w-full backdrop-blur-lg bg-black/60 rounded-3xl shadow-2xl p-4">
+                    <div className="w-full backdrop-blur-lg bg-white/80 dark:bg-black/60  rounded-3xl shadow-2xl p-4">
                         <div className="flex p-2 gap-1">
                             <div className="circle">
                                 <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
@@ -77,9 +77,9 @@ function ismail() {
                             </div>
                         </div>
                         <br />
-                        <h2 className='text-xl md:text-3xl font-bold text-white'>Ismail EL HANI from Vision<span className='text-[#CB6CE6]'>360°</span></h2>
+                        <h2 className='text-xl md:text-3xl font-bold text-black dark:text-white'>Ismail EL HANI from Vision<span className='text-[#CB6CE6]'>360°</span></h2>
                         <h3 className='text-md md:text-lg font-semibold text-blue-500 italic'>The Social Media Maestro!</h3> <br />
-                        <div className='text-gray-300'>
+                        <div className='text-gray-700 dark:text-gray-300'>
                             Hello, dear future clients,<br />
                             Envision a master of engagement, a strategist who turns social media platforms into stages where brands perform and audiences applaud. Your search ends here, because Ismail EL HANI from Vision360° is the virtuoso ready to amplify your online presence!<br /><br />
                             <span className='text-pink-500 ml-4 font-semibold'>Who is Ismail EL HANI?</span> <br />

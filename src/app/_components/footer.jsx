@@ -1,20 +1,21 @@
 "use client"
 import React from 'react';
 
+
 function Footer() {
   const currentYear = new Date().getFullYear(); // Dynamically get the current year
 
   return (
-    <footer className="relative bg-black/60 pt-6 pb-6">
+    <footer className="relative bg-white/80 dark:bg-black/60 pt-6 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4"><img src="/logo.png" alt="logo" className='h-14 w-56' /> <br />
-            <h4 className="text-3xl font-semibold text-white ">Let's keep in touch!</h4>
-            <h5 className="text-lg mt-0 mb-2 text-gray-300">
+            <h4 className="text-3xl font-semibold text-black dark:text-white ">Let's keep in touch!</h4>
+            <h5 className="text-lg mt-0 mb-2 text-gray-600 dark:text-gray-300">
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
             <div className="mt-6 lg:mb-0 mb-6 flex  space-x-2">
-              <button className="bg-white text-lightBlue-400 shadow-xl font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none" type="button">
+              <button className="dark:bg-white text-lightBlue-400 shadow-xl font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none" type="button">
                 <img className="h-5 w-5" src="/icons_footer/facebook.png" alt="logo Facebook" />
               </button>
               <button className="bg-white text-lightBlue-400 shadow-xl font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none" type="button">

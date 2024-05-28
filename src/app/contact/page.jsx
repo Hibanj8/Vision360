@@ -12,10 +12,10 @@ function Contact() {
               <span className=" uppercase mb-4 ml-2 block text-base font-semibold text-purple-900 text-center md:text-left ">
                 Contact Us
               </span>
-              <h2 className="mb-6 text-[32px] font-bold text-black sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+              <h2 className="mb-6 text-[32px] font-bold text-white dark:text-black sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                 Get In Touch With Us
               </h2>
-              <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+              <p className="mb-9 text-white dark:text-black leading-relaxed text-body-color dark:text-dark-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco
               </p>
               <div className="mb-8 flex w-full max-w-[370px]">
@@ -37,7 +37,7 @@ function Contact() {
                   <h4 className="mb-1 text-xl font-bold text-purple-900  ">
                     Our Location
                   </h4>
-                  <p className="text-base text-body-color text-black">
+                  <p className="text-base text-body-color text-white dark:text-black">
                     99 S.t Jomblo Park Pekanbaru 28292. Indonesia
                   </p>
                 </div>
@@ -77,7 +77,7 @@ function Contact() {
                   <h4 className="mb-1 text-xl font-bold text-purple-900">
                     Phone Number
                   </h4>
-                  <p className="text-base text-body-color text-black">
+                  <p className="text-base text-body-color text-white dark:text-black">
                     (+62)81 414 257 9980
                   </p>
                 </div>
@@ -102,7 +102,7 @@ function Contact() {
                   <h4 className="mb-1 text-xl font-bold text-purple-900">
                     Email Address
                   </h4>
-                  <p className="text-base text-body-color dark:text-dark-6">
+                  <p className="text-white dark:text-black">
                     vision360.proo@gmail.com
                   </p>
                 </div>
@@ -110,30 +110,30 @@ function Contact() {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="max-w-md mx-auto p-8 bg-black/60 rounded-3xl shadow-2xl form-container">
-              <h2 className="text-2xl font-semibold text-white mb-6">Say Something!</h2>
+            <div className="max-w-md mx-auto p-8 bg-white/60 dark:bg-black/60 rounded-3xl shadow-2xl form-container">
+              <h2 className="text-2xl font-semibold text-black dark:text-white mb-6">Say Something!</h2>
               <form action="https://fabform.io/f/insert-form-id" method="POST">
                 <div className="mb-4">
-                  <label htmlFor="name" className="block text-gray-300 text-sm font-bold mb-2">Your Name</label>
+                  <label htmlFor="name" className="block text-gray-600 dark:text-gray-300 text-sm font-bold mb-2">Your Name</label>
                   <input type="text" id="name" name="name" placeholder="Ahmed Ras" required
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-[#ACBEE2] bg-gray-700 text-white" />
+                    className="w-full px-3 border-black text-gray-800 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="email" className="block text-gray-300 text-sm font-bold mb-2">Your Email</label>
+                  <label htmlFor="email" className="block text-gray-600 dark:text-gray-300 text-sm font-bold mb-2">Your Email</label>
                   <input type="email" id="email" name="email" placeholder="ahmed@example.com" required
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-[#ACBEE2] bg-gray-700 text-white" />
+                    className="w-full px-3 border-black text-gray-800 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-gray-300 text-sm font-bold mb-2">Your Message</label>
+                  <label htmlFor="message" className="block text-gray-600 dark:text-gray-300 text-sm font-bold mb-2">Your Message</label>
                   <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-[#ACBEE2] bg-gray-700 text-white"></textarea>
+                    className="w-full px-3 border-black text-gray-800 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700"></textarea>
                 </div>
                 <button type="submit"
                   className="relative py-2 px-8 text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-xl hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
                   Send Message
                 </button>
-                <p className="mt-5 text-gray-300">If you are not a fan of forms you can email us instead <a
-                    className="font-medium text-[#ACBEE2] hover:underline"
+                <p className="mt-5 text-black dark:text-white ">If you are not a fan of forms you can email us instead <a
+                    className="font-medium text-purple-900 dark:text-[#ACBEE2] hover:underline"
                     href="mailto:vision360.proo@gmail.com">vision360.proo@gmail.com</a></p>
               </form>
             </div>

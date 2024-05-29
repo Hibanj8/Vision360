@@ -4,7 +4,7 @@ import React from 'react';
 function Home() {
   return (
     <div className='overflow-hidden'>
-      <div className="w-screen h-screen overflow-hidden relative before:block before:absolute before:dark:bg-black/30 before:h-full before:w-full before:top-0 before:left-0 before:z-10 ">
+      <div className="w-screen h-screen overflow-hidden relative before:block before:absolute duration-700 before:dark:bg-black/30 before:h-full before:w-full before:top-0 before:left-0 before:z-10 ">
         <img src="/home-imgs/background-image.jpg" className="absolute top-0 left-0 min-h-full object-cover " alt="" />
         <div className="relative z-20 max-w-screen-lg mx-auto md:grid md:grid-cols-6 h-full items-center  flex-col lg:flex-row md:mt-0 mt-28">
           <div className="col-span-3 mb-4 p-6 md:p-0 lg:mb-0">
@@ -24,11 +24,11 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white/80 dark:bg-black/60 py-10 px-4">
+      <div className="bg-white/80 duration-700 dark:bg-black/60 py-10 px-4">
         <div className="max-w-screen-lg mx-auto md:flex md:justify-between md:items-center">
           <div className="max-w-xl">
-            <h2 className="font-black text-black dark:text-white text-3xl mb-4 text-center md:text-left">Vision360° - Tailored Price Flexibility for Beginners</h2>
-            <p className="text-base text-gray-700 dark:text-gray-300 text-center md:text-left ">Vision360° is your trusted digital partner, 
+            <h2 className="font-black text-black duration-700 dark:text-white text-3xl mb-4 text-center md:text-left">Vision360° - Tailored Price Flexibility for Beginners</h2>
+            <p className="text-base text-gray-700 duration-700 dark:text-gray-300 text-center md:text-left ">Vision360° is your trusted digital partner, 
             offering quality services and innovative solutions.
             Our flexible rates for beginners ensure confidence in overcoming obstacles.
             Let us lead you to success with passion and expertise</p>

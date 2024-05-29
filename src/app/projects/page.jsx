@@ -87,7 +87,7 @@ const Portfolio = () => {
             <PortfolioCard
               ImageHref="/Project-imgs/Design Project -3-/Massurance-couverture.png"
               category="Design"
-              title="Logo: Massurance"
+              title="Branding: Massurance"
               button="View Details"
               buttonHref="/projects/Details-Logo-Massurance"
               showCard={showCard}
@@ -103,7 +103,7 @@ const Portfolio = () => {
             <PortfolioCard
               ImageHref="/Project-imgs/Design Project -3-/Elhani shop-couverture.png"
               category="Design"
-              title="Logo: ElHani.shop"
+              title="Branding: ElHani.shop"
               button="View Details"
               buttonHref="/projects/Details-Logo-Elhani.shop"
               showCard={showCard}
@@ -119,7 +119,7 @@ const Portfolio = () => {
             <PortfolioCard
               ImageHref="/Project-imgs/Design Project -3-/CleanSpace-couverture.png"
               category="Design"
-              title="Logo: CleanSpace"
+              title="Branding: CleanSpace"
               button="View Details"
               buttonHref="/projects/Details-Logo-Cleanspace"
               showCard={showCard}

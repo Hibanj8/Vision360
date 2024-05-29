@@ -64,7 +64,7 @@ function About() {
               <p>At <span className="text-[#CB6CE6] font-bold">Vision360°</span>, we transform innovation into excellence, ensuring your brand shines both online and offline. Our dynamic team excels in everything from crafting <span className="text-pink-500 font-bold">eye-catching logos</span> and <span className="text-green-600 font-bold">professional business cards</span>, to developing custom websites and managing social media.</p> <br />
               <p>We offer a wide range of services, including <span className="text-blue-500 font-bold">advertising production</span> and <span className="text-blue-500 font-bold">product design</span>, to propel your brand towards success. Partner with us for integrated solutions that truly embody your brand and captivate your audience across all platforms.</p>
               <p>Discover how <span className="text-[#CB6CE6] font-bold">Vision360°</span> can elevate your presence in the digital landscape.</p>
-              <br /> <br /> duration-700
+              <br /> <br /> 
             </div>
             <a href="/contact">
             <button

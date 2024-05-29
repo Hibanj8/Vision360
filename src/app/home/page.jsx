@@ -6,7 +6,7 @@ function Home() {
     <div className='overflow-hidden'>
       <div className="w-screen h-screen overflow-hidden relative before:block before:absolute duration-700 before:dark:bg-black/30 before:h-full before:w-full before:top-0 before:left-0 before:z-10 ">
         <img src="/home-imgs/background-image.jpg" className="absolute top-0 left-0 min-h-full object-cover " alt="" />
-        <div className="relative z-20 max-w-screen-lg mx-auto md:grid md:grid-cols-6 h-full items-center  flex-col lg:flex-row md:mt-0 mt-28">
+        <div className="relative z-20 max-w-screen-lg mx-auto lg:grid md:grid-cols-6 h-full items-center  flex-col lg:flex-row md:mt-0 mt-28">
           <div className="col-span-3 mb-4 p-6 md:p-0 lg:mb-0">
             <span className="uppercase text-purple-900 text-xs font-bold mb-2 block text-center md:text-left ">WE ARE VISIONARIES</span>
             <h1 className="text-black font-extrabold text-5xl mb-8 text-center md:text-left">Vision360° makes digital dreams a reality.</h1>

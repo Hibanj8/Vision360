@@ -129,7 +129,7 @@ function Contact() {
                     className="w-full px-3 border-black text-gray-800 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700"></textarea>
                 </div>
                 <button type="submit"
-                  className="relative py-2 px-8 text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-xl hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                  className="text-body-color hover:border-primary hover:bg-primary inline-block border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium text-white dark:text-black hover:text-black hover:dark:text-white relative nded-full overflow-hidden bg-black/60 dark:bg-white rounded-full transition-all duration-400 ease-in-out shadow-2xl hover:scale-105 hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
                   Send Message
                 </button>
                 <p className="mt-5 text-black dark:text-white ">If you are not a fan of forms you can email us instead <a

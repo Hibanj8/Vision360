@@ -16,7 +16,9 @@ function Contact() {
                 Get In Touch With Us
               </h2>
               <p className="mb-9 text-white duration-700 dark:text-black leading-relaxed text-body-color dark:text-dark-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco
+              We're here to assist with any questions, feedback, or suggestions. 
+              At Vision360°, we specialize in innovative design, web development,
+               and digital marketing solutions to help your business succeed.
               </p>
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div className=" text-purple-900 mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -38,7 +40,7 @@ function Contact() {
                     Our Location
                   </h4>
                   <p className="text-base text-body-color text-white duration-700 dark:text-black">
-                    99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                    Casablanca,Bourgone
                   </p>
                 </div>
               </div>
@@ -115,12 +117,17 @@ function Contact() {
               <form action="https://fabform.io/f/insert-form-id" method="POST">
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Name</label>
-                  <input type="text" id="name" name="name" placeholder="Ahmed Ras" required
+                  <input type="text" id="name" name="name" placeholder="vision" required
                     className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Email</label>
-                  <input type="email" id="email" name="email" placeholder="ahmed@example.com" required
+                  <input type="email" id="email" name="email" placeholder="vision360.proo@gmail.com" required
+                    className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="phone" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Phone</label>
+                  <input type="phone" id="phone" name="phone" placeholder="0682354422" required 
                     className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-6">

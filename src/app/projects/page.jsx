@@ -22,8 +22,8 @@ const Portfolio = () => {
                   Our Recent Projects
                 </h2>
                 <p className="text-body-color text-white duration-700 dark:text-black">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form.
+                At Vision360°, we have completed a variety of innovative projects in design, web development, 
+                and digital marketing, each carefully crafted to meet the unique needs of our clients.
                 </p>
               </div>
             </div>

@@ -2,13 +2,13 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="flex flex-col md:flex-row">
-
-      <div className="w-full mt-6 md:mt-0 p-3 order-first md:order-2 md:max-w-[650px] md:w-1/2 md:pt-12 md:pb-12 md:ml-11">
-        <div className="relative h-2/3 max-w-full max-h-full md:max-w-[450px] md:max-h-[400px] mt-14 flex items-center justify-center ">
-          <img src="/home-imgs/img_aboutUs.png" alt="img_aboutUs" className=" mt-0 md:ml-44 w-3/4 sm:w-1/2 md:w-4/5" />
+    <div className="flex flex-col lg:flex-row">
+      <div className="w-full mt-6 md:mt-0 p-3 order-first lg:order-2 lg:max-w-[650px] lg:w-1/2 lg:pt-12 lg:pb-12 lg:ml-11">
+        <div className="relative h-2/3 max-w-full max-h-full lg:max-w-[450px] lg:max-h-[400px] mt-14 flex items-center justify-center ">
+          <img src="/home-imgs/img_aboutUs.png" alt="img_aboutUs" className=" mt-0 lg:ml-44 w-3/4 sm:w-1/2 lg:w-4/5" />
         </div>
-        <div className="w-full h-1/3 max-h-[100px] overflow-hidden backdrop-blur-lg bg-white/60 duration-700 dark:bg-black/60 rounded-full shadow-2xl flex items-center space-x-4 p-2">
+
+        <div className="w-full h-1/3 max-h-[100px] overflow-hidden backdrop-blur-lg bg-white/60 duration-700 dark:bg-black/60 rounded-full shadow-2xl flex items-center justify-between  p-2">
           <div className=" md:ml-9 md:w-20 md:h-16 flex-shrink-0 flex flex-col items-center justify-center">
             <img src="/home-imgs/idea.png" alt="Service 1" className="h-16 w-16" />
             <p className=" font-semibold text-xs text-center hidden md:block text-black duration-700 dark:text-white">Innovative Ideas</p>
@@ -20,7 +20,6 @@ function About() {
             <p className=" font-semibold text-xs text-center hidden md:block duration-700 text-black dark:text-white">Responsive Web Site</p>
           </div>
           <div className="w-px h-2/3 bg-blue-500"></div>
-
           <div className="md:w-20 md:h-16 flex-shrink-0 flex flex-col items-center justify-center">
             <img src="/home-imgs/Marketing digital.png" alt="Service 3" className="h-16 w-16" />
             <p className=" font-semibold text-xs text-center hidden md:block text-black duration-700 dark:text-white">Social Media Enhancement</p>
@@ -33,17 +32,14 @@ function About() {
           </div>
          <a href="/services"><button className=' text-body-color hover:border-primary hover:bg-primary inline-block py-[10px] px-7 text-sm font-medium hover:text-black hover:dark:text-white relative nded-full overflow-hidden bg-black/60 dark:bg-white rounded-full transition-all duration-400 ease-in-out shadow-2xl hover:scale-105 hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0' >
             <div className="h-16 w-20 md:w-20 md:h-16 flex-shrink-0 flex flex-col items-center justify-center">
-              <img src="/home-imgs/voir plus.png" alt="Service 3" className="object-cover h-16 w-16 mr-10 md:mr-0" />
+              <img src="/home-imgs/voir plus.png" alt="Service 3" className="object-cover h-16 w-16" />
             </div>
-          </button></a> 
-
+          </button></a>  
         </div>
 
-
-
       </div>
-      <div className="w-full md:w-1/2  md:mt-0 md:order-1 ">
-        <div className="flex flex-col m-4 md:ml-8  justify-start items-center md:justify-center min-h-screen">
+      <div className="w-full lg:w-1/2  md:mt-0 lg:order-1 ">
+        <div className="flex flex-col m-4 lg:ml-8  justify-start items-center lg:justify-center lg:min-h-screen">
           <div className="w-full backdrop-blur-lg bg-white/80 duration-700 dark:bg-black/60 rounded-3xl shadow-2xl p-4">
             <div className="flex p-2 gap-1">
               <div className="circle">

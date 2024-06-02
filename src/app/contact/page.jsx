@@ -1,8 +1,44 @@
 "use client"
 
-import React from 'react';
+import React, { useState } from "react";
+import axios from 'axios';
 
 function Contact() {
+  const [notification, setNotification] = useState("");
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/contact', formData);
+      console.log("sent successfully");
+      setNotification("Thank you for contacting us!");
+      setTimeout(() => {
+        setNotification("");
+      }, 5000);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+    } catch (error) {
+      console.log(error.response.data.message);
+    }
+  };
   return (
     <div className=' mt-28 overflow-hidden'>
       <div className="container">
@@ -16,9 +52,9 @@ function Contact() {
                 Get In Touch With Us
               </h2>
               <p className="mb-9 text-white duration-700 dark:text-black leading-relaxed text-body-color dark:text-dark-6">
-              We're here to assist with any questions, feedback, or suggestions. 
-              At Vision360°, we specialize in innovative design, web development,
-               and digital marketing solutions to help your business succeed.
+                We're here to assist with any questions, feedback, or suggestions.
+                At Vision360°, we specialize in innovative design, web development,
+                and digital marketing solutions to help your business succeed.
               </p>
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div className=" text-purple-900 mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -114,34 +150,41 @@ function Contact() {
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="max-w-md mx-auto p-8 bg-white/60 duration-700 dark:bg-black/60 rounded-3xl shadow-2xl form-container">
               <h2 className="text-2xl font-semibold text-black duration-700 dark:text-white mb-6">Say Something!</h2>
-              <form action="https://fabform.io/f/insert-form-id" method="POST">
+              <form action="https://fabform.io/f/insert-form-id" method="POST" onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Name</label>
-                  <input type="text" id="name" name="name" placeholder="vision" required
+                  <input type="text" id="name" name="name" placeholder="vision" required value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Email</label>
-                  <input type="email" id="email" name="email" placeholder="vision360.proo@gmail.com" required
+                  <input type="email" id="email" name="email" placeholder="vision360.proo@gmail.com" required value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="phone" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Phone</label>
-                  <input type="phone" id="phone" name="phone" placeholder="0682354422" required 
+                  <input type="phone" id="phone" name="phone" placeholder="0682354422" required value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700" />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-gray-600 duration-700 dark:text-gray-300 text-sm font-bold mb-2">Your Message</label>
-                  <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required
+                  <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required value={formData.message}
+                    onChange={handleChange}
                     className="w-full px-3 border-black text-gray-800 duration-700 dark:text-gray-300  py-2 border rounded-md focus:outline-none focus:border-black focus:dark:border-[#ACBEE2] bg-gray-300 dark:bg-gray-700"></textarea>
                 </div>
                 <button type="submit"
                   className="text-body-color hover:border-primary hover:bg-primary inline-block border border-stroke  dark:border-dark-3 py-[10px] px-7 text-sm font-medium text-white dark:text-black hover:text-black hover:dark:text-white relative nded-full overflow-hidden bg-black/60 dark:bg-white rounded-full transition-all duration-400 ease-in-out shadow-2xl hover:scale-105 hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#C287BB] before:to-[#e7b3e0b7] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0 duration-700">
                   Send Message
                 </button>
+                {notification && (
+                            <div className="mt-2 text-xl text-green-600">{notification}</div>
+                        )}
                 <p className="mt-5 text-black duration-700 dark:text-white ">If you are not a fan of forms you can email us instead <a
-                    className="font-medium text-purple-900 duration-700 dark:text-[#ACBEE2] hover:underline"
-                    href="mailto:vision360.proo@gmail.com">vision360.proo@gmail.com</a></p>
+                  className="font-medium text-purple-900 duration-700 dark:text-[#ACBEE2] hover:underline"
+                  href="mailto:vision360.proo@gmail.com">vision360.proo@gmail.com</a></p>
               </form>
             </div>
           </div>

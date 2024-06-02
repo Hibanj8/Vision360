@@ -1,19 +1,18 @@
 import connexion from '../../../../libs/connectiondb.js';
 import Contact from '../../../model/contact.js';
-import nodemailer from 'nodemailer'
-import {NextResponse} from "next/server";
-
+import nodemailer from 'nodemailer';
+import { NextResponse } from 'next/server';
 
 export async function POST(request) {
     await connexion();
     try {
         const { name, email, phone, message } = await request.json();
         await Contact.create({ name, email, phone, message });
-        sendEmail(email, { name, phone, message});
+        await sendEmail(email, { name, phone, message });
 
-        return NextResponse.json({ message: "Contact créé avec succès" }, {status:201});
+        return NextResponse.json({ message: "Contact créé avec succès" }, { status: 201 });
     } catch (error) {
-        return NextResponse.json({ message: error.message },{status:400});
+        return NextResponse.json({ message: error.message }, { status: 400 });
     }
 }
 
@@ -21,12 +20,13 @@ export async function GET(request) {
     await connexion();
     try {
         const contacts = await Contact.find();
-        return NextResponse.json({ message: contacts }, {status:200});
+        return NextResponse.json({ message: contacts }, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ message: error.message } , {status:400});
+        return NextResponse.json({ message: error.message }, { status: 400 });
     }
 }
-function sendEmail(email, { name, phone, message}) {
+
+async function sendEmail(email, { name, phone, message }) {
     console.log(name, email, phone, message);
     const text = `
     <h1>Nouvelle Demande de Contact</h1>
@@ -45,23 +45,23 @@ function sendEmail(email, { name, phone, message}) {
 
     const mailOptionsToNajihiba = {
         from: process.env.EMAIL_USER,
-        to: 'najihiba137@example.com',
+        to: 'najihiba137@gmail.com',
         subject: 'Nouvelle Demande de Contact',
-        text: 'text',
-      };
-    
+        html: text,
+    };
+
     const mailOptionsToUser = {
         from: process.env.EMAIL_USER,
         to: email,
         subject: 'Merci de nous avoir contactés !',
         html: '<p>Nous avons bien reçu votre message et nous vous répondrons dans les plus brefs délais.</p>',
-      };
+    };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error('Error sending email:', error);
-        } else {
-            console.log('Email sent:', info.response);
-        }
-    });
+    try {
+        await transporter.sendMail(mailOptionsToNajihiba);
+        await transporter.sendMail(mailOptionsToUser);
+        console.log('Emails sent successfully');
+    } catch (error) {
+        console.error('Error sending email:', error);
+    }
 }

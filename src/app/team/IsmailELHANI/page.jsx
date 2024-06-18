@@ -6,7 +6,7 @@ function ismail() {
     return (
 
         <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/3 order-first md:order-2 mt-28 md:mt-0">
+            <div data-aos="fade-right" className=" w-full md:w-1/3 order-first md:order-2 mt-28 md:mt-0">
                 <div className="relative h-full w-full flex items-center justify-center sm:mb-7">
                     <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400 max-w-2xl ">
                         <button className="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
@@ -62,7 +62,7 @@ function ismail() {
                 </div>
             </div>
 
-            <div className="w-full md:w-2/3 md:order-1">
+            <div data-aos="fade-left" className="w-full md:w-2/3 md:order-1">
                 <div className="flex flex-col m-4 md:ml-8 md:mt-8 items-start justify-center min-h-screen">
                     <div className="w-full backdrop-blur-lg bg-white/80 duration-700 dark:bg-black/60  rounded-3xl shadow-2xl p-4">
                         <div className="flex p-2 gap-1">

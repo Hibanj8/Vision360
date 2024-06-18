@@ -4,19 +4,19 @@ import React from 'react'
 function Team() {
   return (
    
-    <div className="  max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-24"> 
-   <div class="-mx-4 flex flex-wrap">
-         <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[400px] md:max-w-[510px] text-center">
-               <span class="text-primary mb-2 block text-lg font-semibold uppercase text-purple-900">
+    <div className="overflow-hidden max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-24"> 
+   <div className="-mx-4 flex flex-wrap">
+         <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[400px] md:max-w-[510px] text-center">
+               <span data-aos="fade-up" className="text-primary mb-2 block text-lg font-semibold uppercase text-purple-900">
                Our Team
                </span>
-               <h2
-                  class="text-white duration-700 dark:text-black mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]"
+               <h2 data-aos="fade-up"
+                  className="text-white duration-700 dark:text-black mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]"
                   >
                   Our Awesome Team
                </h2>
-               <p class="text-body-color text-base text-white duration-700 dark:text-black ">
+               <p data-aos="fade-up" className="text-body-color text-base text-white duration-700 dark:text-black ">
                Our talented team of professionals ensures that every aspect of your project 
                receives the attention it deserves,
                 delivering excellence in every detail.
@@ -28,7 +28,7 @@ function Team() {
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ml-10 md:ml-0">
 
         {/* Carte 1 */}
-        <div className='mb-4'>
+        <div className='mb-4' data-aos="zoom-out-right">
           <div className="shadow-strong shadow-xl bg-white/80 duration-700 dark:bg-black/60 group before:hover:scale-95 before:hover:h-72 before:hover:w-80 before:hover:rounded-b-2xl before:transition-all before:duration-500 before:content-[''] before:w-80 before:h-24 before:rounded-t-2xl before:bg-gradient-to-bl from-white via-[#F4EAE0] to-white before:absolute before:top-0 w-80 h-72 relative flex flex-col items-center justify-center gap-2 text-center rounded-2xl overflow-hidden">
             <div className="w-28 h-28 bg-black duration-700 dark:bg-white mt-8 rounded-full border-4 border-black/60 dark:border-slate-50 z-10 group-hover:scale-150 group-hover:-translate-x-24  group-hover:-translate-y-20 transition-all ">
               <img src="/photo-profile/hiba's profile.png" alt="" className='rounded-full' />
@@ -42,7 +42,7 @@ function Team() {
         </div>
 
         {/* Carte 2 */}
-        <div className='mb-4'>
+        <div className='mb-4' data-aos="zoom-out">
           <div className="shadow-strong shadow-xl bg-white/80 duration-700 dark:bg-black/60 group before:hover:scale-95 before:hover:h-72 before:hover:w-80 before:hover:rounded-b-2xl before:transition-all before:duration-500 before:content-[''] before:w-80 before:h-24 before:rounded-t-2xl before:bg-gradient-to-bl from-white via-[#C2C3DF] to-white before:absolute before:top-0 w-80 h-72 relative flex flex-col items-center justify-center gap-2 text-center rounded-2xl overflow-hidden">
             <div className="w-28 h-28 bg-black duration-700 dark:bg-white mt-8 rounded-full border-4 border-black/60 dark:border-slate-50 z-10 group-hover:scale-150 group-hover:-translate-x-24  group-hover:-translate-y-20 transition-all ">
               <img src="/photo-profile/salma's profile.png" alt="" className='rounded-full' />
@@ -56,7 +56,7 @@ function Team() {
         </div>
 
         {/* Carte 3 */}
-        <div className='mb-4'>
+        <div className='mb-4' data-aos="zoom-out-left">
           <div className="shadow-strong shadow-xl bg-white/80 duration-700 dark:bg-black/60 group before:hover:scale-95 before:hover:h-72 before:hover:w-80 before:hover:rounded-b-2xl before:transition-all before:duration-500 before:content-[''] before:w-80 before:h-24 before:rounded-t-2xl before:bg-gradient-to-bl from-white via-[#C9CBD7] to-white before:absolute before:top-0 w-80 h-72 relative flex flex-col items-center justify-center gap-2 text-center rounded-2xl overflow-hidden">
             <div className="w-28 h-28 bg-black duration-700 dark:bg-white mt-8 rounded-full border-4 border-black/60 dark:border-slate-50 z-10 group-hover:scale-150 group-hover:-translate-x-24  group-hover:-translate-y-20 transition-all ">
               <img src="/photo-profile/ismail's profile.png" alt="" className='rounded-full' />

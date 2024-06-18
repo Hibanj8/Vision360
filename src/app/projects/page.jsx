@@ -10,18 +10,18 @@ const Portfolio = () => {
 
   return (
     <>
-      <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] duration-700 dark:bg-dark">
+      <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] duration-700 dark:bg-dark overflow-hidden">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                <span className="uppercase text-purple-900 mb-2 block text-lg font-semibold">
+                <span data-aos="fade-up"  className="uppercase text-purple-900 mb-2 block text-lg font-semibold">
                   Our Portfolio
                 </span>
-                <h2 className="text-white duration-700 dark:text-black mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
+                <h2 data-aos="fade-up" className="text-white duration-700 dark:text-black mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
                   Our Recent Projects
                 </h2>
-                <p className="text-body-color text-white duration-700 dark:text-black">
+                <p data-aos="fade-up" className="text-body-color text-white duration-700 dark:text-black">
                 At Vision360°, we have completed a variety of innovative projects in design, web development, 
                 and digital marketing, each carefully crafted to meet the unique needs of our clients.
                 </p>
@@ -152,7 +152,7 @@ const PortfolioCard = ({
   return (
     <>
       <div
-        className={`w-full px-4 md:w-1/2 xl:w-1/3 ${
+       data-aos="flip-up" className={`w-full px-4 md:w-1/2 xl:w-1/3  ${
           showCard === "all" || showCard === category.toLowerCase()
             ? "block"
             : "hidden"

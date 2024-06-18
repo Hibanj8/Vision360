@@ -6,7 +6,6 @@ import Team from "./team/page";
 import Home from "./home/page";
 import Contact from "./contact/page";
 
-
 export default function Page() {
   return (
     <>

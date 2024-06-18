@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="w-full mt-6 md:mt-0 p-3 order-first lg:order-2 lg:max-w-[650px] lg:w-1/2 lg:pt-12 lg:pb-12 lg:ml-11">
+      <div data-aos="zoom-in" className="w-full mt-6 md:mt-0 p-3 order-first lg:order-2 lg:max-w-[650px] lg:w-1/2 lg:pt-12 lg:pb-12 lg:ml-11">
         <div className="relative h-2/3 max-w-full max-h-full lg:max-w-[450px] lg:max-h-[400px] mt-14 flex items-center justify-center ">
           <img src="/home-imgs/img_aboutUs.png" alt="img_aboutUs" className=" mt-0 lg:ml-44 w-3/4 sm:w-1/2 lg:w-4/5" />
         </div>
@@ -38,7 +38,7 @@ function About() {
         </div>
 
       </div>
-      <div className="w-full lg:w-1/2  md:mt-0 lg:order-1 ">
+      <div data-aos="zoom-in" className="w-full lg:w-1/2  md:mt-0 lg:order-1 ">
         <div className="flex flex-col m-4 lg:ml-8  justify-start items-center lg:justify-center lg:min-h-screen">
           <div className="w-full backdrop-blur-lg bg-white/80 duration-700 dark:bg-black/60 rounded-3xl shadow-2xl p-4">
             <div className="flex p-2 gap-1">

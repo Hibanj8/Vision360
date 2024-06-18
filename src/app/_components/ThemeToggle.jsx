@@ -1,24 +1,23 @@
 import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-    const [darkMode, setDarkMode] = useState(true);
-
-    useEffect(() => {
-        const theme = localStorage.getItem("theme");
-        if (theme === "dark") {
-            setDarkMode(true);
-        } else {
-            setDarkMode(false);
+    const [darkMode, setDarkMode] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const theme = localStorage.getItem("theme");
+            return theme === "dark";
         }
-    }, []);
+        return false; // Valeur par défaut si localStorage n'est pas disponible
+    });
 
     useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem("theme", "light");
+        if (typeof window !== 'undefined') {
+            if (darkMode) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem("theme", "light");
+            }
         }
     }, [darkMode]);
 

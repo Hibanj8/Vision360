@@ -3,6 +3,7 @@ import './globals.css';
 import Link from 'next/link';
 import Navbar from './_components/Navbar';
 import Footer from './_components/Footer';
+import ClientLayout from './ClientLayout'; 
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,9 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-r from-[#ACBEE2] from-10% via-[#C287BB] via-40% to-[#F9CDC3] to-90% min-h-screen flex flex-col`} >
+      <body className={`${inter.className} bg-gradient-to-r from-[#ACBEE2] from-10% via-[#C287BB] via-40% to-[#F9CDC3] to-90% min-h-screen flex flex-col`}>
         <Navbar />
+        <ClientLayout>
           {children}
+        </ClientLayout>
         <Footer />
       </body>
     </html>

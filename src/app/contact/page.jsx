@@ -43,7 +43,7 @@ function Contact() {
     <div className=' mt-28 overflow-hidden'>
       <div className="container">
         <div className="-mx-4 flex flex-wrap lg:justify-between mb-10 p-5 md-p-0 md:ml-32">
-          <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
+          <div data-aos="fade-right" className="w-full px-4 lg:w-1/2 xl:w-6/12">
             <div className="mb-12 max-w-[570px] lg:mb-0">
               <span className=" uppercase mb-4 ml-2 block text-base font-semibold text-purple-900 text-center md:text-left ">
                 Contact Us
@@ -147,7 +147,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+          <div data-aos="fade-left" className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="max-w-md mx-auto p-8 bg-white/60 duration-700 dark:bg-black/60 rounded-3xl shadow-2xl form-container">
               <h2 className="text-2xl font-semibold text-black duration-700 dark:text-white mb-6">Say Something!</h2>
               <form action="https://fabform.io/f/insert-form-id" method="POST" onSubmit={handleSubmit}>
